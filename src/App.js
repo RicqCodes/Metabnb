@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import styled, { ThemeProvider } from "styled-components";
+import GlobalStyles from "./globalStyle/global.styled";
+
+import { theme } from "./globalStyle/theme";
+
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/HeroSection";
+import Customers from "./components/Customer/CustomersSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Header />
+        <Hero />
+        <Customers />
+      </ThemeProvider>
+    </AppContainer>
   );
 }
 
 export default App;
+
+const AppContainer = styled.div`
+  position: relative;
+`;
