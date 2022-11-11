@@ -6,6 +6,7 @@ const AdventureSection = () => {
     <AdventureContainer>
       <HeaderText>
         <h2>Inspiration for your next adventure</h2>
+        <BoxContainer></BoxContainer>
       </HeaderText>
     </AdventureContainer>
   );
@@ -17,6 +18,7 @@ const AdventureContainer = styled.div`
   max-width: 122rem;
   display: flex;
   flex-direction: column;
+  margin: 4rem auto;
 `;
 
 const HeaderText = styled.div`
@@ -26,6 +28,11 @@ const HeaderText = styled.div`
     color: #000;
     font-weight: 700;
     line-height: 5.9rem;
-    font-size: 2.8rem;
+    font-size: 3.8rem;
   }
+`;
+
+const BoxContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
