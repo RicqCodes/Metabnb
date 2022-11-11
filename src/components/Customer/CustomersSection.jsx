@@ -23,8 +23,8 @@ const CustomerContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 10rem;
-  gap: 26.4rem;
+  padding: 1rem 5rem;
+  gap: 36.4rem;
 
   img {
     width: 15rem;

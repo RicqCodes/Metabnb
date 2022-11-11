@@ -108,6 +108,7 @@ const SearchInput = styled.div`
       font-size: 1.6rem;
       line-height: 1.9rem;
       border-radius: 0px 8px 8px 0px;
+      cursor: pointer;
     }
   }
 `;

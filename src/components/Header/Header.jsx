@@ -61,6 +61,10 @@ const NavLink = styled.div`
   ul {
     display: flex;
     gap: 4.8rem;
+
+    li {
+      cursor: pointer;
+    }
   }
 `;
 
@@ -72,4 +76,5 @@ const ConnectButton = styled.button`
   border: none;
   border-radius: 10px;
   color: #fff;
+  cursor: pointer;
 `;

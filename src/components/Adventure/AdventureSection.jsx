@@ -1,13 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 
+import AdventureCard from "./components/AdventureCard";
+import { data } from "./adventureData";
+
 const AdventureSection = () => {
+  const nftData = data.map((nft, index) => {
+    return <AdventureCard key={index} nftData={nft} />;
+  });
+
   return (
     <AdventureContainer>
-      <HeaderText>
+      <Container>
         <h2>Inspiration for your next adventure</h2>
-        <BoxContainer></BoxContainer>
-      </HeaderText>
+        <BoxContainer>{nftData}</BoxContainer>
+      </Container>
     </AdventureContainer>
   );
 };
@@ -21,7 +28,7 @@ const AdventureContainer = styled.div`
   margin: 4rem auto;
 `;
 
-const HeaderText = styled.div`
+const Container = styled.div`
   text-align: center;
 
   h2 {
@@ -35,4 +42,5 @@ const HeaderText = styled.div`
 const BoxContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  gap: 1.5rem;
 `;
