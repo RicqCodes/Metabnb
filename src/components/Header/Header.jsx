@@ -94,6 +94,10 @@ const Logo = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  @media (max-width: 24.5em) {
+    width: 18rem;
+  }
 `;
 
 const NavLink = styled.div`
@@ -213,6 +217,15 @@ const HamBoxInner = styled.div`
       transition: bottom 0.1s ease-in 0.25s, transform 0.22s;
       bottom: -10px;
       transform: rotate(0deg);
+    }
+
+    @media (max-width: 24.5em) {
+      &:before {
+        top: -7px;
+      }
+      &:after {
+        bottom: -7px;
+      }
     }
   }
 
