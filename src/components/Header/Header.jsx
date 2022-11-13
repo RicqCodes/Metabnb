@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Modal from "../Modal/Modal";
 import { Link } from "react-router-dom";
 
+import NavBuger from "../NavBuger";
 import logo from "./assets/GroupMetabnb.svg";
 
 const Header = () => {
@@ -34,7 +35,12 @@ const Header = () => {
             </li>
           </ul>
         </NavLink>
-        <Article></Article>
+        {navButton && (
+          <NavBuger
+            setIsModalOpen={setIsModalOpen}
+            setNavButton={setNavButton}
+          />
+        )}
         <ConnectButton
           aria-label="connect"
           onClick={() => setIsModalOpen(true)}
@@ -132,6 +138,7 @@ const ConnectButton = styled.button`
 const NavButton = styled.button`
   display: none;
   font-size: 2.4rem;
+  z-index: 999;
 
   @media (max-width: 41em) {
     display: block;
