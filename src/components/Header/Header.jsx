@@ -253,10 +253,3 @@ const HamBoxInner = styled.div`
     }
   }
 `;
-
-const Article = styled.article`
-  display: none;
-  /* position: fixed; */
-  height: 100vh;
-  width: 100vh;
-`;
