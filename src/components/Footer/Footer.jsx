@@ -103,9 +103,10 @@ const LeftContainer = styled.div`
     margin-bottom: 4rem;
   }
 
-  @media (max-width: 23em) {
+  @media (max-width: 26em) {
+    align-items: center;
     gap: 3rem;
-    padding-left: 2.5rem;
+    /* padding-left: 2.5rem; */
   }
 `;
 
@@ -116,6 +117,10 @@ const SocialLogo = styled.div`
 
   img {
     width: 100%;
+  }
+
+  @media (max-width: 26em) {
+    margin-left: -8rem;
   }
 `;
 
@@ -142,14 +147,14 @@ const Community = styled.div`
     }
   }
 
-  @media (max-width: 23em) {
+  @media (max-width: 26em) {
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
 
     ul {
       li {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
   }

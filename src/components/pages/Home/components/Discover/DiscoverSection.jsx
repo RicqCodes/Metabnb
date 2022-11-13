@@ -105,6 +105,9 @@ const TextContainer = styled.div`
   }
 
   @media (max-width: 26em) {
+    width: 100%;
+    padding: 8rem;
+
     h2 {
       font-size: 3.2rem;
     }
@@ -125,7 +128,7 @@ const TextContainer = styled.div`
 
   @media (max-width: 23em) {
     p {
-      width: 29rem;
+      width: 35rem;
     }
   }
 `;
