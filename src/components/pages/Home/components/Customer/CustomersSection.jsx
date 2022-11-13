@@ -48,7 +48,7 @@ const CustomerContainer = styled.div`
   }
 
   @media (max-width: 23em) {
-    gap: 6rem;
+    gap: 5rem;
   }
 
   img {
@@ -60,7 +60,7 @@ const CustomerContainer = styled.div`
     }
 
     @media (max-width: 23em) {
-      width: 11rem;
+      width: 10rem;
     }
   }
 `;

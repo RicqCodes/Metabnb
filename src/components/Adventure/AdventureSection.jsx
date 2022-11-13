@@ -56,7 +56,7 @@ const Container = styled.div`
 
   @media (max-width: 23em) {
     h2 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-top: 0;
     }
   }

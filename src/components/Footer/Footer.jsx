@@ -104,7 +104,7 @@ const LeftContainer = styled.div`
   }
 
   @media (max-width: 23em) {
-    gap: 5rem;
+    gap: 3rem;
   }
 `;
 
@@ -138,6 +138,18 @@ const Community = styled.div`
     li {
       font-size: 1.2rem;
       font-weight: 300;
+    }
+  }
+
+  @media (max-width: 23em) {
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        font-size: 1rem;
+      }
     }
   }
 `;

@@ -135,11 +135,13 @@ const TextContainer = styled.div`
   }
 
   @media (max-width: 23em) {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    line-height: 4.8rem;
 
     p {
       margin-left: 1rem;
-      width: 40rem;
+      width: 35rem;
+      font-size: 1.9rem;
     }
   }
 `;
