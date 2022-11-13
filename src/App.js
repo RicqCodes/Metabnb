@@ -109,15 +109,15 @@ const MainContainer = styled.div`
     }
   }
 
-  @media (max-width: 24em) {
+  @media (max-width: 24.5em) {
     ${AppContainer} & {
-      width: 67rem;
+      width: 55rem;
     }
   }
 
   @media (max-width: 23em) {
     ${AppContainer} & {
-      width: 63rem;
+      width: 49rem;
     }
   }
 `;

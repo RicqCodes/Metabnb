@@ -73,6 +73,10 @@ const HeaderContainer = styled.div`
   @media (max-width: 72em) {
     padding: 0 5rem;
   }
+
+  @media (max-width: 23em) {
+    padding: 0 2rem;
+  }
 `;
 
 const NavBar = styled.div`

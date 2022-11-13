@@ -80,6 +80,11 @@ const FooterContainer = styled.footer`
     padding: 4rem;
     gap: 6rem;
   }
+
+  @media (max-width: 23em) {
+    padding: 4rem 2rem 2rem;
+    gap: 1.5rem;
+  }
 `;
 
 const LeftContainer = styled.div`
@@ -96,6 +101,10 @@ const LeftContainer = styled.div`
     font-weight: 400;
     line-height: 1.6rem;
     margin-bottom: 4rem;
+  }
+
+  @media (max-width: 23em) {
+    gap: 5rem;
   }
 `;
 

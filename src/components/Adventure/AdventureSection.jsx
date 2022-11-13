@@ -53,6 +53,13 @@ const Container = styled.div`
       font-size: 3rem;
     }
   }
+
+  @media (max-width: 23em) {
+    h2 {
+      font-size: 2.2rem;
+      margin-top: 0;
+    }
+  }
 `;
 
 const BoxContainer = styled.div`

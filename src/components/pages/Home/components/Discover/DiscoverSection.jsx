@@ -113,6 +113,15 @@ const TextContainer = styled.div`
       font-size: 1.6rem;
     }
   }
+
+  @media (max-width: 23em) {
+    font-size: 2.2rem;
+
+    p {
+      margin-left: 1rem;
+      width: 40rem;
+    }
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -124,5 +133,9 @@ const ImageContainer = styled.div`
     left: 0rem;
     bottom: 9.5rem;
     z-index: 2;
+  }
+
+  @media (max-width: 23em) {
+    display: hidden;
   }
 `;
