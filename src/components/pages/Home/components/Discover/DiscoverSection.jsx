@@ -141,7 +141,7 @@ const ImageContainer = styled.div`
     z-index: 2;
   }
 
-  @media (max-width: 23em) {
+  @media (max-width: 24em) {
     display: none;
   }
 `;
