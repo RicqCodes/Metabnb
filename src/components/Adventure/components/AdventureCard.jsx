@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import image_1 from "../assets/image_1.svg";
 import rating from "../assets/rating.svg";
 
 const AdventureCard = ({ nftData }) => {
@@ -38,6 +37,19 @@ const CardContainer = styled.div`
     width: 100%;
     padding: 1rem;
   }
+
+  @media (max-width: 72em) {
+    /* flex-wrap: nowrap; */
+    width: 24rem;
+  }
+
+  @media (max-width: 46.6em) {
+    width: 32rem;
+  }
+
+  @media (max-width: 30em) {
+    width: 40rem;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -61,6 +73,16 @@ const LeftText = styled.div`
     font-size: 1.2rem;
     margin: 0;
   }
+
+  @media (max-width: 46.6em) {
+    width: 40%;
+  }
+
+  @media (max-width: 30em) {
+    p {
+      font-size: 1.8rem;
+    }
+  }
 `;
 
 const RightText = styled.div`
@@ -78,5 +100,11 @@ const RightText = styled.div`
 
   p:first-child {
     font-weight: 700;
+  }
+
+  @media (max-width: 30em) {
+    p {
+      font-size: 1.8rem;
+    }
   }
 `;

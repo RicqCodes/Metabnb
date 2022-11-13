@@ -26,7 +26,33 @@ const CustomerContainer = styled.div`
   padding: 1rem 5rem;
   gap: 36.4rem;
 
+  @media (max-width: 72em) {
+    padding: 0 5rem;
+    gap: 29rem;
+  }
+
+  @media (max-width: 37em) {
+    gap: 20rem;
+  }
+
+  @media (max-width: 34rem) {
+    gap: 16rem;
+  }
+
+  @media (max-width: 30em) {
+    gap: 10rem;
+  }
+
+  @media (max-width: 24em) {
+    gap: 8rem;
+  }
+
   img {
     width: 15rem;
+    padding: 0.5rem 0;
+
+    @media (max-width: 24em) {
+      width: 12rem;
+    }
   }
 `;

@@ -25,16 +25,28 @@ const DiscoverSection = () => {
 export default DiscoverSection;
 
 const DiscoverContainer = styled.div`
-  padding: 0 calc(100vw - 133.8rem);
+  width: 100%;
+  padding: 1rem 10rem;
   height: 77.4rem;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   border: 1px solid #000000;
-  display: flex;
   justify-content: space-between;
   gap: 7rem;
   align-items: center;
   color: #fff;
+
+  @media (max-width: 72em) {
+    padding: 0 5rem;
+  }
+
+  @media (max-width: 34rem) {
+    gap: 2rem;
+
+    height: 50rem;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -50,11 +62,20 @@ const TextContainer = styled.div`
     width: 30%;
     height: 4rem;
     font-family: inherit;
+    font-size: 1.6rem;
     border: none;
     background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
     border-radius: 8px;
     color: ${({ theme }) => theme.colors.primaryColor};
     cursor: pointer;
+
+    @media (max-width: 63em) {
+      width: 40%;
+    }
+
+    @media (max-width: 34rem) {
+      width: 45%;
+    }
   }
 
   h2 {
@@ -72,6 +93,25 @@ const TextContainer = styled.div`
     font-size: 1.8rem;
     line-height: 3.5rem;
     -text-fill-color: transparent;
+  }
+
+  @media (max-width: 34rem) {
+    width: 60rem;
+    gap: 3rem;
+
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  @media (max-width: 26em) {
+    h2 {
+      font-size: 3.2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
   }
 `;
 

@@ -26,6 +26,10 @@ const AdventureContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 4rem auto;
+
+  @media (max-width: 72em) {
+    padding: 0 5rem;
+  }
 `;
 
 const Container = styled.div`
@@ -37,10 +41,32 @@ const Container = styled.div`
     line-height: 5.9rem;
     font-size: 3.8rem;
   }
+
+  @media (max-width: 26em) {
+    h2 {
+      font-size: 3.3rem;
+    }
+  }
+
+  @media (max-width: 24em) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
 `;
 
 const BoxContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+
+  @media (max-width: 72em) {
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 46.6em) {
+    column-gap: 5rem;
+  }
 `;

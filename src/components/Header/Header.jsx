@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
+import Modal from "../Modal/Modal";
 
 import logo from "./assets/GroupMetabnb.svg";
 
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [navButton, setNavButton] = useState(false);
   return (
     <HeaderContainer>
       <NavBar>
         <Logo>
-          <img src={logo} alt="MetaBnB Logo" />
+          <img
+            onClick={() => setIsModalOpen(false)}
+            src={logo}
+            alt="MetaBnB Logo"
+          />
         </Logo>
         <NavLink>
           <ul>
@@ -18,8 +25,23 @@ const Header = () => {
             <li>Community</li>
           </ul>
         </NavLink>
-        <ConnectButton>Connect Wallet</ConnectButton>
+        <Article></Article>
+        <ConnectButton
+          aria-label="connect"
+          onClick={() => setIsModalOpen(true)}
+        >
+          Connect Wallet
+        </ConnectButton>
+        <NavButton
+          onClick={() => setNavButton(!navButton)}
+          className={navButton ? "open" : "close"}
+        >
+          <HamBox>
+            <HamBoxInner className="test"></HamBoxInner>
+          </HamBox>
+        </NavButton>
       </NavBar>
+      {isModalOpen && <Modal setIsModalOpen={setIsModalOpen} />}
     </HeaderContainer>
   );
 };
@@ -29,8 +51,13 @@ export default Header;
 const HeaderContainer = styled.div`
   max-width: 124rem;
   padding-top: 3rem;
+  height: 10rem;
   display: flex;
   margin: 0 auto;
+
+  @media (max-width: 72em) {
+    padding: 0 5rem;
+  }
 `;
 
 const NavBar = styled.div`
@@ -66,10 +93,15 @@ const NavLink = styled.div`
       cursor: pointer;
     }
   }
+
+  @media (max-width: 41em) {
+    display: none;
+  }
 `;
 
 const ConnectButton = styled.button`
   font-family: inherit;
+  font-size: 1.8rem;
   padding: 1rem 2rem;
   background: none;
   background-color: ${({ theme }) => theme.colors.primaryColor};
@@ -77,4 +109,133 @@ const ConnectButton = styled.button`
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
+
+  @media (max-width: 41em) {
+    display: none;
+  }
+`;
+
+const NavButton = styled.button`
+  display: none;
+  font-size: 2.4rem;
+
+  @media (max-width: 41em) {
+    display: block;
+    background-color: transparent;
+    border: none;
+
+    .open,
+    .close {
+      display: flex;
+      z-index: 10;
+      color: inherit;
+      text-transform: none;
+      background-color: ${({ theme }) => theme.colors.primaryColor};
+      border: 0;
+      justify-content: center;
+      align-items: center;
+      margin-right: -15px;
+      padding: 15px;
+      transition-property: opacity, filter;
+      transition-duration: 0.15s;
+      transition-timing-function: linear;
+      position: relative;
+    }
+  }
+`;
+
+const HamBox = styled.div`
+  ${NavButton}.close &, ${NavButton}.open & {
+    width: 3rem;
+    height: 2.4rem;
+    display: inline-block;
+    position: relative;
+  }
+`;
+
+const HamBoxInner = styled.div`
+  ${NavButton}.close & {
+    width: 4rem;
+    height: 2px;
+    background-color: ${({ theme }) => theme.colors.primaryColor};
+    border-radius: 2px;
+    transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: rotate(0deg);
+
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      background-color: ${({ theme }) => theme.colors.primaryColor};
+      display: block;
+      position: absolute;
+      left: auto;
+      right: 0;
+    }
+
+    &:before {
+      width: 120%;
+      opacity: 1;
+      transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+      top: -10px;
+    }
+
+    &:after {
+      width: 80%;
+      transition: bottom 0.1s ease-in 0.25s, transform 0.22s;
+      bottom: -10px;
+      transform: rotate(0deg);
+    }
+  }
+
+  /* THIS STYLE HAPPENS WHEN THE HAMBOX IS OPENED */
+
+  ${NavButton}.open & {
+    width: 4rem;
+    height: 2px;
+    background-color: ${({ theme }) => theme.colors.primaryColor};
+    border-radius: 4px;
+    transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: rotate(225deg);
+
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      background-color: ${({ theme }) => theme.colors.primaryColor};
+      border-radius: 4px;
+      display: block;
+      position: absolute;
+      left: auto;
+      right: 0;
+    }
+
+    &::before {
+      width: 100%;
+      opacity: 0;
+      transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+      top: 0;
+    }
+
+    &::after {
+      width: 100%;
+      transition: bottom 0.1s ease-out,
+        transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+      bottom: 0;
+      transform: rotate(-90deg);
+    }
+  }
+`;
+
+const Article = styled.article`
+  display: none;
+  /* position: fixed; */
+  height: 100vh;
+  width: 100vh;
 `;

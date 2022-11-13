@@ -63,7 +63,23 @@ const FooterContainer = styled.footer`
   color: #fff;
   display: flex;
   gap: 24rem;
-  overflow: hidden;
+
+  @media (max-width: 80em) {
+    padding: 5rem 7rem;
+  }
+
+  @media (max-width: 72em) {
+    padding: 4rem 10rem;
+  }
+
+  @media (max-width: 30em) {
+    gap: 12rem;
+  }
+
+  @media (max-width: 26em) {
+    padding: 4rem;
+    gap: 6rem;
+  }
 `;
 
 const LeftContainer = styled.div`

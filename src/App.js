@@ -1,26 +1,25 @@
 import styled, { ThemeProvider } from "styled-components";
 import GlobalStyles from "./globalStyle/global.styled";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { theme } from "./globalStyle/theme";
 
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/HeroSection";
-import Customers from "./components/Customer/CustomersSection";
-import AdventureSection from "./components/Adventure/AdventureSection";
-import DiscoverSection from "./components/Discover/DiscoverSection";
-import Footer from "./components/Footer/Footer";
+import Home from "./components/pages/Home";
+import NFTS from "./components/pages/NFTS";
 
 function App() {
   return (
     <AppContainer>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <Header />
-        <Hero />
-        <Customers />
-        <AdventureSection />
-        <DiscoverSection />
-        <Footer />
+        <MainContainer>
+          <Router>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/" element={<NFTS />} />
+            </Routes>
+          </Router>
+        </MainContainer>
       </ThemeProvider>
     </AppContainer>
   );
@@ -30,5 +29,95 @@ export default App;
 
 const AppContainer = styled.div`
   position: relative;
-  /* overflow-x: hidden; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const MainContainer = styled.div`
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+
+  ${AppContainer} & {
+    width: 144rem;
+  }
+
+  @media (max-width: 80em) {
+    ${AppContainer} & {
+      width: 130rem;
+    }
+  }
+
+  @media (max-width: 72em) {
+    ${AppContainer} & {
+      width: 120rem;
+    }
+  }
+
+  @media (max-width: 68em) {
+    ${AppContainer} & {
+      width: 125rem;
+    }
+  }
+
+  @media (max-width: 64em) {
+    ${AppContainer} & {
+      width: 114rem;
+    }
+  }
+
+  @media (max-width: 45em) {
+    ${AppContainer} & {
+      width: 112rem;
+    }
+  }
+
+  @media (max-width: 40em) {
+    ${AppContainer} & {
+      width: 110rem;
+    }
+  }
+
+  @media (max-width: 37em) {
+    ${AppContainer} & {
+      width: 98rem;
+    }
+  }
+
+  @media (max-width: 34em) {
+    ${AppContainer} & {
+      width: 92rem;
+    }
+  }
+
+  @media (max-width: 30em) {
+    ${AppContainer} & {
+      width: 82rem;
+    }
+  }
+
+  @media (max-width: 26em) {
+    ${AppContainer} & {
+      width: 72rem;
+    }
+  }
+
+  @media (max-width: 25em) {
+    ${AppContainer} & {
+      width: 68rem;
+    }
+  }
+
+  @media (max-width: 24em) {
+    ${AppContainer} & {
+      width: 67rem;
+    }
+  }
+
+  @media (max-width: 23em) {
+    ${AppContainer} & {
+      width: 63rem;
+    }
+  }
 `;
