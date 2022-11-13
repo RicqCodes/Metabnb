@@ -1,6 +1,7 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Modal from "../Modal/Modal";
+import { Link } from "react-router-dom";
 
 import logo from "./assets/GroupMetabnb.svg";
 
@@ -19,10 +20,18 @@ const Header = () => {
         </Logo>
         <NavLink>
           <ul>
-            <li>Home</li>
-            <li>Place to stay</li>
-            <li>NFTs</li>
-            <li>Community</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/">Place to stay</Link>
+            </li>
+            <li>
+              <Link to="/nfts">NFTs</Link>
+            </li>
+            <li>
+              <Link to="/">Community</Link>
+            </li>
           </ul>
         </NavLink>
         <Article></Article>
@@ -91,6 +100,11 @@ const NavLink = styled.div`
 
     li {
       cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 

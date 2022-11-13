@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { theme } from "./globalStyle/theme";
 
-import Home from "./components/pages/Home";
-import NFTS from "./components/pages/NFTS";
+import Home from "./components/pages/Home/Home";
+import NFTS from "./components/pages/Nfts/NFTS";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Router>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/" element={<NFTS />} />
+              <Route path="/nfts" element={<NFTS />} />
             </Routes>
           </Router>
         </MainContainer>
