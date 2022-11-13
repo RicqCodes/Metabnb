@@ -53,11 +53,6 @@ const HeroContainer = styled.div`
     flex-direction: column-reverse;
     gap: 4rem;
   }
-
-  /*
-  @media (max-width: 58em) {
-    margin-top: -15rem;
-  } */
 `;
 
 const TextContainer = styled.div`
@@ -123,7 +118,7 @@ const TextContainer = styled.div`
 
     p {
       margin-left: 3rem;
-      width: 50rem;
+      width: 70rem;
       font-size: 2.1rem;
       text-align: left;
     }
@@ -132,17 +127,28 @@ const TextContainer = styled.div`
   @media (max-width: 24em) {
     font-size: 3rem;
     line-height: 5.3rem;
+
+    p {
+      width: 50rem;
+      text-align: center;
+    }
   }
 
   @media (max-width: 23em) {
     font-size: 1.7rem;
     line-height: 3rem;
 
+    h2 {
+      font-size: 3.8rem;
+    }
+
     p {
       margin-left: 1rem;
-      width: 26rem;
-      font-size: 1.4rem;
+      width: 42rem;
+      font-size: 1.5rem;
       line-height: 2rem;
+      text-align: center;
+      margin-left: 4rem;
     }
   }
 `;
