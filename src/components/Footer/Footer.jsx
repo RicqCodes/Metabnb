@@ -77,15 +77,14 @@ const FooterContainer = styled.footer`
   }
 
   @media (max-width: 26em) {
-    padding: 4rem;
-    gap: 6rem;
-  }
-
-  @media (max-width: 24em) {
     flex-direction: column-reverse;
     padding: 4rem 2rem 2rem;
     gap: 4rem;
   }
+
+  /* @media (max-width: 24em) {
+    
+  } */
 `;
 
 const LeftContainer = styled.div`
