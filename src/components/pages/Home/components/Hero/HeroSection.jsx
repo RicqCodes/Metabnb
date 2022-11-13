@@ -135,13 +135,14 @@ const TextContainer = styled.div`
   }
 
   @media (max-width: 23em) {
-    font-size: 2rem;
-    line-height: 4.8rem;
+    font-size: 1.7rem;
+    line-height: 3rem;
 
     p {
       margin-left: 1rem;
-      width: 35rem;
-      font-size: 1.9rem;
+      width: 26rem;
+      font-size: 1.4rem;
+      line-height: 2rem;
     }
   }
 `;
@@ -199,6 +200,12 @@ const SearchInput = styled.div`
       }
     }
 
+    @media (max-width: 23em) {
+      input {
+        height: 4rem;
+      }
+    }
+
     button {
       border: none;
       background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
@@ -218,6 +225,10 @@ const SearchInput = styled.div`
         /* button { */
         height: 5.5rem;
         /* } */
+      }
+
+      @media (max-width: 23em) {
+        height: 4rem;
       }
     }
   }

@@ -122,6 +122,12 @@ const TextContainer = styled.div`
       width: 40rem;
     }
   }
+
+  @media (max-width: 23em) {
+    p {
+      width: 29rem;
+    }
+  }
 `;
 
 const ImageContainer = styled.div`

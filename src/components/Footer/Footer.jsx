@@ -82,8 +82,9 @@ const FooterContainer = styled.footer`
   }
 
   @media (max-width: 23em) {
+    flex-direction: column-reverse;
     padding: 4rem 2rem 2rem;
-    gap: 1.5rem;
+    gap: 4rem;
   }
 `;
 
@@ -105,6 +106,7 @@ const LeftContainer = styled.div`
 
   @media (max-width: 23em) {
     gap: 3rem;
+    padding-left: 2.5rem;
   }
 `;
 
@@ -122,7 +124,7 @@ const RightContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 57%;
-  align-self: flex-start;
+  align-self: center;
 `;
 
 const Community = styled.div`

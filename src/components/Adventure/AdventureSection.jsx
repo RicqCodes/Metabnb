@@ -51,12 +51,13 @@ const Container = styled.div`
   @media (max-width: 24em) {
     h2 {
       font-size: 3rem;
+      line-height: 3rem;
     }
   }
 
   @media (max-width: 23em) {
     h2 {
-      font-size: 2rem;
+      font-size: 2.3rem;
       margin-top: 0;
     }
   }
