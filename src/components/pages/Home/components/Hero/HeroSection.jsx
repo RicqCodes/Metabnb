@@ -124,17 +124,20 @@ const TextContainer = styled.div`
     }
   }
 
-  @media (max-width: 24em) {
-    font-size: 3rem;
-    line-height: 5.3rem;
+  @media (max-width: 26em) {
+    font-size: 2rem;
+    line-height: 4.3rem;
 
     p {
       width: 50rem;
       text-align: center;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      text-align: center;
     }
   }
 
-  @media (max-width: 23em) {
+  /* @media (max-width: 23em) {
     font-size: 1.7rem;
     line-height: 3rem;
 
@@ -150,7 +153,7 @@ const TextContainer = styled.div`
       text-align: center;
       margin-left: 4rem;
     }
-  }
+  } */
 `;
 
 const ImageContainer = styled.div`
