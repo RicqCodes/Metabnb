@@ -48,8 +48,8 @@ const CustomerContainer = styled.div`
   }
 
   @media (max-width: 26em) {
-    width: 98%;
-    gap: 8rem;
+    width: 83%;
+    gap: 5rem;
   }
 
   img {
