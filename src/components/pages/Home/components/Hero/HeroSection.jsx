@@ -125,13 +125,13 @@ const TextContainer = styled.div`
   }
 
   @media (max-width: 26em) {
-    font-size: 2.2rem;
-    line-height: 4.3rem;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
     width: 39rem;
 
     p {
       width: 38rem;
-      font-size: 1.6rem;
+      font-size: 1.9rem;
       line-height: 2rem;
       text-align: left;
       margin-left: 0;
