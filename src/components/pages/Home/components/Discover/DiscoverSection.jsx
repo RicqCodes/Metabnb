@@ -25,8 +25,7 @@ const DiscoverSection = () => {
 export default DiscoverSection;
 
 const DiscoverContainer = styled.div`
-  width: 100%;
-  padding: 1rem 10rem;
+  padding: 3rem 10rem;
   height: 77.4rem;
   display: flex;
   justify-content: center;
@@ -37,21 +36,6 @@ const DiscoverContainer = styled.div`
   gap: 7rem;
   align-items: center;
   color: #fff;
-
-  @media (max-width: 72em) {
-    padding: 0 5rem;
-  }
-
-  @media (max-width: 34rem) {
-    gap: 2rem;
-
-    height: 40rem;
-  }
-
-  @media (max-width: 26em) {
-    gap: 5rem;
-    /* padding: 0 5rem; */
-  }
 `;
 
 const TextContainer = styled.div`
@@ -99,7 +83,7 @@ const TextContainer = styled.div`
     line-height: 3.5rem;
     -text-fill-color: transparent;
   }
-
+  /* 
   @media (max-width: 34rem) {
     width: 60rem;
     gap: 3rem;
@@ -120,7 +104,7 @@ const TextContainer = styled.div`
     p {
       font-size: 1.6rem;
     }
-  }
+  } */
 `;
 
 const ImageContainer = styled.div`

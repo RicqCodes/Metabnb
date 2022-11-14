@@ -64,18 +64,14 @@ const Header = () => {
 export default Header;
 
 const HeaderContainer = styled.div`
-  max-width: 124rem;
-  padding-top: 3rem;
+  /* max-width: 124rem; */
+  padding: 3rem 10rem;
   height: 10rem;
   display: flex;
   margin: 0 auto;
 
-  @media (max-width: 72em) {
-    padding: 0 5rem;
-  }
-
-  @media (max-width: 26em) {
-    padding: 0 2rem;
+  @media (max-width: 61em) {
+    padding: 3rem 5rem;
   }
 `;
 
@@ -93,10 +89,6 @@ const Logo = styled.div`
   img {
     width: 100%;
     height: 100%;
-  }
-
-  @media (max-width: 26em) {
-    width: 13rem;
   }
 `;
 

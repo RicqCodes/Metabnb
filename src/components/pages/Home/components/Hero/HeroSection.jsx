@@ -34,28 +34,16 @@ const Hero = () => {
 export default Hero;
 
 const HeroContainer = styled.div`
-  max-width: 122rem;
+  padding: 0 10rem;
   display: flex;
   justify-content: space-between;
+  gap: 3rem;
   align-items: center;
   margin: 15rem auto;
-  /* height: 100vh; */
-  @media (max-width: 72em) {
-    padding: 0 5rem;
-  }
 
-  @media (max-width: 40em) {
-    margin-top: 8rem;
-  }
-
-  @media (max-width: 34em) {
+  @media (max-width: 41em) {
     margin-top: 9rem;
     flex-direction: column-reverse;
-    gap: 4rem;
-  }
-
-  @media (max-width: 26em) {
-    margin-top: 4rem;
   }
 `;
 
@@ -74,7 +62,6 @@ const TextContainer = styled.div`
 
     span {
       font-weight: 700;
-      /* color: linear-gradient(90deg, #a02279 100%, #ffc089 60%); */
       color: #a02279;
     }
   }
@@ -88,91 +75,40 @@ const TextContainer = styled.div`
     color: #434343;
   }
 
-  @media (max-width: 72em) {
-    width: 54rem;
+  @media (max-width: 82em) {
     font-size: 3rem;
-    line-height: 6.84rem;
+    line-height: 6rem;
 
     p {
       font-size: 2rem;
-      max-width: 54.5rem;
-    }
-  }
-
-  @media (max-width: 45em) {
-    gap: 4rem;
-  }
-
-  @media (max-width: 40rem) {
-    font-size: 3.2rem;
-    width: 100%;
-
-    gap: 2.5rem;
-
-    p {
-      width: 90%;
-      font-size: 1.9rem;
       line-height: 3rem;
     }
   }
 
-  @media (max-width: 34rem) {
-    text-align: center;
-    max-width: 58rem;
+  @media (max-width: 41em) {
+    width: 100%;
 
-    p {
-      margin-left: 3rem;
-      width: 70rem;
-      font-size: 2.1rem;
-      text-align: left;
-    }
+    font-size: 4rem;
+    text-align: center;
+    line-height: 5.4rem;
   }
 
   @media (max-width: 26em) {
-    font-size: 2.4rem;
-    line-height: 3.5rem;
-    width: 45rem;
-
-    p {
-      width: 38rem;
-      font-size: 1.9rem;
-      line-height: 2rem;
-      text-align: left;
-      margin-left: 2.5rem;
-    }
+    gap: 2.5rem;
+    font-size: 2rem;
+    line-height: 4rem;
   }
 
-  @media (max-width: 25em) {
-    font-size: 2.4rem;
-    line-height: 3.5rem;
-    width: 39rem;
-
-    p {
-      width: 38rem;
-      font-size: 1.9rem;
-      line-height: 2rem;
-      text-align: left;
-      margin-left: 0;
-    }
-  }
-
-  /* @media (max-width: 23em) {
-    font-size: 1.7rem;
+  @media (max-width: 19em) {
+    gap: 2.5rem;
+    font-size: 1.5rem;
     line-height: 3rem;
 
-    h2 {
-      font-size: 3.8rem;
-    }
-
     p {
-      margin-left: 1rem;
-      width: 42rem;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       line-height: 2rem;
-      text-align: center;
-      margin-left: 4rem;
     }
-  } */
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -181,69 +117,39 @@ const ImageContainer = styled.div`
   img {
     width: 100%;
   }
-
-  @media (max-width: 72em) {
-    max-width: 44rem;
-  }
-
-  @media (max-width: 41em) {
-    max-width: 62rem;
-  }
-
-  @media (max-width: 26em) {
-    max-width: 46rem;
-  }
-  @media (max-width: 25em) {
-    max-width: 40rem;
-  }
 `;
 
 const SearchInput = styled.div`
-  max-width: 61.8rem;
+  display: flex;
+  width: 80%;
+
+  @media (max-width: 40em) {
+    width: 100%;
+    align-items: center;
+  }
 
   form {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     input {
       width: 70%;
-      height: 4.5rem;
-      padding-left: 0.8rem;
+      height: 5rem;
       background: rgba(247, 247, 247, 0.1);
       border: 1px solid #a3a3a3;
       border-radius: 8px 0px 0px 8px;
+      font-size: 1.8rem;
+      padding-left: 2rem;
 
       ::placeholder {
         color: #b8b8b8;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
 
-      @media (max-width: 72em) {
-        max-width: 50.5rem;
-      }
-    }
-    @media (max-width: 40em) {
-      max-width: 85%;
-    }
-
-    @media (max-width: 34rem) {
-      max-width: 100%;
-
-      input {
-        height: 5.5rem;
-      }
-    }
-
-    @media (max-width: 26em) {
-      input {
-        height: 4.5rem;
-      }
-    }
-
-    @media (max-width: 23em) {
-      input {
-        height: 3.5rem;
+      :focus {
+        outline: none;
       }
     }
 
@@ -251,29 +157,17 @@ const SearchInput = styled.div`
       border: none;
       background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
       color: #fff;
-      /* padding: 1.5rem 8rem; */
+      height: 5rem;
       width: 30%;
-      height: 4.5rem;
       font-weight: 400;
       font-size: 1.6rem;
       line-height: 1.9rem;
       border-radius: 0px 8px 8px 0px;
       cursor: pointer;
+    }
 
-      @media (max-width: 34rem) {
-        max-width: 100%;
-
-        /* button { */
-        height: 5.5rem;
-        /* } */
-      }
-
-      @media (max-width: 26em) {
-        height: 4.5rem;
-      }
-      @media (max-width: 23em) {
-        height: 3.5rem;
-      }
+    @media (max-width: 61em) {
+      width: 100%;
     }
   }
 `;
