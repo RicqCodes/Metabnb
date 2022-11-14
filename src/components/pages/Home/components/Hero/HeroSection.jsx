@@ -45,6 +45,10 @@ const HeroContainer = styled.div`
     margin-top: 9rem;
     flex-direction: column-reverse;
   }
+
+  @media (max-width: 31em) {
+    margin-top: 4rem;
+  }
 `;
 
 const TextContainer = styled.div`
