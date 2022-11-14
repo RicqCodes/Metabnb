@@ -45,6 +45,8 @@ html {
 
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Red Rose', cursive;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
