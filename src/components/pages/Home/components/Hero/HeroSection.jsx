@@ -53,6 +53,10 @@ const HeroContainer = styled.div`
     flex-direction: column-reverse;
     gap: 4rem;
   }
+
+  @media (max-width: 34em) {
+    margin-top: 4rem;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -214,9 +218,9 @@ const SearchInput = styled.div`
       }
     }
 
-    @media (max-width: 23em) {
+    @media (max-width: 26em) {
       input {
-        height: 4rem;
+        height: 3.5rem;
       }
     }
 
@@ -241,8 +245,8 @@ const SearchInput = styled.div`
         /* } */
       }
 
-      @media (max-width: 23em) {
-        height: 4rem;
+      @media (max-width: 26em) {
+        height: 3.5rem;
       }
     }
   }
