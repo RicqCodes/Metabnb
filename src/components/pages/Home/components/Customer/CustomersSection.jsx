@@ -48,9 +48,8 @@ const CustomerContainer = styled.div`
   }
 
   @media (max-width: 26em) {
-    gap: 5rem;
-    width: 83%;
-    padding: 0 5rem;
+    width: 104%;
+    gap: 8rem;
   }
 
   img {

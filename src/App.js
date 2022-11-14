@@ -99,11 +99,11 @@ const MainContainer = styled.div`
 
   @media (max-width: 26em) {
     ${AppContainer} & {
-      width: 72rem;
+      width: 48rem;
     }
   }
 
-  @media (max-width: 25em) {
+  /* @media (max-width: 25em) {
     ${AppContainer} & {
       width: 68rem;
     }
@@ -144,4 +144,5 @@ const MainContainer = styled.div`
       width: 40rem;
     }
   }
+  */
 `;
