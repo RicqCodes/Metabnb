@@ -96,6 +96,10 @@ const ModalContainer = styled.div`
   width: 60rem;
   background: #ffffff;
   border-radius: 1.6rem;
+
+  @media (max-width: 34.6em) {
+    width: 38rem;
+  }
 `;
 
 const Heading = styled.div`
