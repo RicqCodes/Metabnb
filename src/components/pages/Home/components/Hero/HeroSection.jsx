@@ -125,15 +125,16 @@ const TextContainer = styled.div`
   }
 
   @media (max-width: 26em) {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     line-height: 4.3rem;
+    width: 39rem;
 
     p {
-      width: 40rem;
-      text-align: center;
-      font-size: 1.5rem;
+      width: 38rem;
+      font-size: 1.6rem;
       line-height: 2rem;
-      text-align: center;
+      text-align: left;
+      margin-left: 0;
     }
   }
 
@@ -169,6 +170,10 @@ const ImageContainer = styled.div`
 
   @media (max-width: 41em) {
     max-width: 62rem;
+  }
+
+  @media (max-width: 26em) {
+    max-width: 40rem;
   }
 `;
 

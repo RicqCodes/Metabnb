@@ -6,7 +6,7 @@ import image_5 from "./assets/image_5.png";
 import image_6 from "./assets/image_6.png";
 import image_7 from "./assets/image_7.png";
 import image_8 from "./assets/image_8.png";
-import rating from "./assets/rating.png";
+import rating from "./assets/rating.svg";
 
 export const data = [
   {
