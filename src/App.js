@@ -97,31 +97,22 @@ const MainContainer = styled.div`
     }
   }
 
-  @media (max-width: 28em) {
-    ${AppContainer} & {
-      width: 75rem;
-    }
-  }
-
   @media (max-width: 26em) {
     ${AppContainer} & {
-      width: 45rem;
+      width: 43rem;
     }
   }
 
-  /* @media (max-width: 24.8em) {
+  @media (max-width: 24.5em) {
     ${AppContainer} & {
-      width: 58rem;
+      width: 65rem;
     }
   }
-
-  @media (max-width: 22em) {
+  /* @media (max-width: 25em) {
     ${AppContainer} & {
-      width: 4rem;
+      width: 68rem;
     }
-  } */
-  /*
-  
+  }
 
 
   @media (max-width: 23em) {
