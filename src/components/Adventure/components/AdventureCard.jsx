@@ -40,15 +40,29 @@ const CardContainer = styled.div`
 
   @media (max-width: 72em) {
     /* flex-wrap: nowrap; */
-    width: 24rem;
+    width: 23rem;
+  }
+  @media (max-width: 53.5em) {
+    /* flex-wrap: nowrap; */
+    width: 21rem;
   }
 
-  @media (max-width: 46.6em) {
+  @media (max-width: 49.2em) {
+    /* flex-wrap: nowrap; */
+    width: 20rem;
+  }
+
+  @media (max-width: 48.01em) {
+    /* flex-wrap: nowrap; */
     width: 32rem;
   }
 
+  @media (max-width: 33.9em) {
+    width: 27rem;
+  }
+
   @media (max-width: 30em) {
-    width: 40rem;
+    width: 35rem;
   }
 `;
 

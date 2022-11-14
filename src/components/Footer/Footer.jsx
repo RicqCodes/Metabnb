@@ -76,7 +76,7 @@ const FooterContainer = styled.footer`
     gap: 12rem;
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 47.4em) {
     flex-direction: column-reverse;
     padding: 4rem 0 2rem;
     gap: 4rem;
@@ -96,14 +96,14 @@ const LeftContainer = styled.div`
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-top: -1rem;
     font-weight: 400;
     line-height: 1.6rem;
     margin-bottom: 4rem;
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 47.4em) {
     align-items: center;
     gap: 3rem;
     /* padding-left: 2.5rem; */
@@ -112,14 +112,14 @@ const LeftContainer = styled.div`
 
 const SocialLogo = styled.div`
   display: flex;
-  width: 1.6rem;
+  width: 1.9rem;
   gap: 3rem;
 
   img {
     width: 100%;
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 47.4em) {
     margin-left: -8rem;
   }
 `;
@@ -134,7 +134,7 @@ const RightContainer = styled.div`
 const Community = styled.div`
   h2 {
     margin-bottom: 2rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   ul {
     display: flex;
@@ -142,7 +142,7 @@ const Community = styled.div`
     gap: 1.5rem;
 
     li {
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       font-weight: 300;
     }
   }

@@ -9,7 +9,7 @@ html {
             font-size: 60%;
         } 
 
-        @media (max-width: 68em) {
+         @media (max-width: 68em) {
             font-size: 56%;
         } 
 
@@ -18,16 +18,17 @@ html {
         }  
 
         @media (max-width: 58em) {
-            font-size: 44%;
+            /* font-size: 44%; */
+            font-size: 50%;
         }   
 
         @media (max-width: 49em) {
-            font-size: 40%;
+            font-size: 45%;
         }   
         
-        @media (max-width: 45em) {
+        /* @media (max-width: 45em) {
             font-size: 36%;
-        }  
+        }   */
         
         /*
         @media (max-width: 41em) {

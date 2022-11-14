@@ -22,7 +22,8 @@ const AdventureSection = () => {
 export default AdventureSection;
 
 const AdventureContainer = styled.div`
-  max-width: 122rem;
+  /* max-width: 122rem; */
+  padding: 0 10rem;
   display: flex;
   flex-direction: column;
   margin: 4rem auto;
@@ -76,7 +77,7 @@ const BoxContainer = styled.div`
     justify-content: center;
   }
 
-  @media (max-width: 46.6em) {
+  /* @media (max-width: 46.6em) {
     column-gap: 5rem;
-  }
+  } */
 `;

@@ -42,7 +42,7 @@ const DiscoverContainer = styled.div`
   }
 
   @media (max-width: 28em) {
-    height: 35rem;
+    height: 40rem;
   }
 `;
 
@@ -72,6 +72,9 @@ const TextContainer = styled.div`
 
     @media (max-width: 34rem) {
       width: 45%;
+    }
+    @media (max-width: 20.6rem) {
+      width: 100%;
     }
   }
 
@@ -103,6 +106,17 @@ const TextContainer = styled.div`
       text-align: center;
     }
   }
+
+  @media (max-width: 20.6rem) {
+    gap: 2.5rem;
+    h2 {
+      font-size: 2.8rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -116,7 +130,7 @@ const ImageContainer = styled.div`
     z-index: 2;
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 47.4em) {
     display: none;
   }
 `;
