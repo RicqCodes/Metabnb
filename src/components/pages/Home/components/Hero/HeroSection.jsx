@@ -177,6 +177,10 @@ const SearchInput = styled.div`
       :focus {
         outline: none;
       }
+
+      @media (max-width: 31em) {
+        height: 3.5rem;
+      }
     }
 
     button {
@@ -190,6 +194,10 @@ const SearchInput = styled.div`
       line-height: 1.9rem;
       border-radius: 0px 8px 8px 0px;
       cursor: pointer;
+
+      @media (max-width: 31em) {
+        height: 3.5rem;
+      }
     }
 
     @media (max-width: 61em) {
