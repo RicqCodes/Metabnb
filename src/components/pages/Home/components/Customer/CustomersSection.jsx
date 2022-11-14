@@ -50,7 +50,7 @@ const CustomerContainer = styled.div`
   @media (max-width: 26em) {
     gap: 5rem;
     width: 83%;
-    padding: 0 3.5rem;
+    padding: 0 5rem;
   }
 
   img {
