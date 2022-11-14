@@ -131,6 +131,20 @@ const TextContainer = styled.div`
   @media (max-width: 26em) {
     font-size: 2.4rem;
     line-height: 3.5rem;
+    width: 45rem;
+
+    p {
+      width: 38rem;
+      font-size: 1.9rem;
+      line-height: 2rem;
+      text-align: left;
+      margin-left: 2.5rem;
+    }
+  }
+
+  @media (max-width: 25em) {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
     width: 39rem;
 
     p {
@@ -177,6 +191,9 @@ const ImageContainer = styled.div`
   }
 
   @media (max-width: 26em) {
+    max-width: 46rem;
+  }
+  @media (max-width: 25em) {
     max-width: 40rem;
   }
 `;
@@ -220,6 +237,12 @@ const SearchInput = styled.div`
 
     @media (max-width: 26em) {
       input {
+        height: 4.5rem;
+      }
+    }
+
+    @media (max-width: 23em) {
+      input {
         height: 3.5rem;
       }
     }
@@ -246,6 +269,9 @@ const SearchInput = styled.div`
       }
 
       @media (max-width: 26em) {
+        height: 4.5rem;
+      }
+      @media (max-width: 23em) {
         height: 3.5rem;
       }
     }

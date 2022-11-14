@@ -74,7 +74,7 @@ const HeaderContainer = styled.div`
     padding: 0 5rem;
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 23em) {
     padding: 0 2rem;
   }
 `;
@@ -95,7 +95,7 @@ const Logo = styled.div`
     height: 100%;
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 23em) {
     width: 13rem;
   }
 `;

@@ -40,6 +40,7 @@ const Container = styled.div`
     font-weight: 700;
     line-height: 5.9rem;
     font-size: 3.8rem;
+    margin: 0 0 3rem;
   }
 
   @media (max-width: 26em) {

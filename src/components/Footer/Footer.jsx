@@ -76,7 +76,7 @@ const FooterContainer = styled.footer`
     gap: 12rem;
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 28em) {
     flex-direction: column-reverse;
     padding: 4rem 0 2rem;
     gap: 4rem;
@@ -103,7 +103,7 @@ const LeftContainer = styled.div`
     margin-bottom: 4rem;
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 28em) {
     align-items: center;
     gap: 3rem;
     /* padding-left: 2.5rem; */
@@ -119,7 +119,7 @@ const SocialLogo = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 28em) {
     margin-left: -8rem;
   }
 `;
