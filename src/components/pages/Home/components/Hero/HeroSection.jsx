@@ -54,7 +54,7 @@ const HeroContainer = styled.div`
     gap: 4rem;
   }
 
-  @media (max-width: 34em) {
+  @media (max-width: 26em) {
     margin-top: 4rem;
   }
 `;

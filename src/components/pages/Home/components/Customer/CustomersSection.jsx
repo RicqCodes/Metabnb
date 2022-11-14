@@ -55,7 +55,7 @@ const CustomerContainer = styled.div`
     width: 15rem;
     padding: 0.5rem 0;
 
-    @media (max-width: 23em) {
+    @media (max-width: 26em) {
       width: 6rem;
     }
 
