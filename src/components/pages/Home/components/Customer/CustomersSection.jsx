@@ -49,7 +49,8 @@ const CustomerContainer = styled.div`
 
   @media (max-width: 26em) {
     gap: 5rem;
-    width: 85%;
+    width: 83%;
+    justify-content: space-around;
   }
 
   img {
