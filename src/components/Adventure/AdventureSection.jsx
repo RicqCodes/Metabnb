@@ -45,10 +45,11 @@ const Container = styled.div`
   @media (max-width: 26em) {
     h2 {
       font-size: 3.3rem;
+      line-height: 2.5rem;
     }
   }
 
-  @media (max-width: 24em) {
+  /* @media (max-width: 24em) {
     h2 {
       font-size: 3rem;
       line-height: 3rem;
@@ -60,7 +61,7 @@ const Container = styled.div`
       font-size: 2.3rem;
       margin-top: 0;
     }
-  }
+  } */
 `;
 
 const BoxContainer = styled.div`
