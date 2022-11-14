@@ -91,31 +91,57 @@ const TextContainer = styled.div`
     font-size: 4rem;
     text-align: center;
     line-height: 5.4rem;
+
+    p {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
   }
 
   @media (max-width: 26em) {
     gap: 2.5rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 4rem;
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
   }
 
   @media (max-width: 19em) {
-    gap: 2.5rem;
-    font-size: 1.5rem;
-    line-height: 3rem;
+    gap: 2rem;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
 
     p {
       font-size: 1.2rem;
-      line-height: 2rem;
+      line-height: 2.4rem;
     }
   }
 `;
 
 const ImageContainer = styled.div`
-  max-width: 47.6rem;
+  /* width: 47.6rem; */
 
   img {
     width: 100%;
+  }
+
+  @media (max-width: 41em) {
+    width: 67rem;
+  }
+
+  @media (max-width: 31em) {
+    width: 55rem;
+  }
+
+  @media (max-width: 24em) {
+    width: 45rem;
+  }
+
+  @media (max-width: 19em) {
+    width: 35rem;
   }
 `;
 
@@ -167,7 +193,7 @@ const SearchInput = styled.div`
     }
 
     @media (max-width: 61em) {
-      width: 100%;
+      /* width: 100%; */
     }
   }
 `;

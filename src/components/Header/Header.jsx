@@ -73,6 +73,11 @@ const HeaderContainer = styled.div`
   @media (max-width: 61em) {
     padding: 3rem 5rem;
   }
+
+  @media (max-width: 28) {
+    padding-left: 2rem;
+    padding: right: 2rem;
+  }
 `;
 
 const NavBar = styled.div`
@@ -84,11 +89,13 @@ const NavBar = styled.div`
 
 const Logo = styled.div`
   width: 23.3rem;
-  height: 3.7rem;
 
   img {
     width: 100%;
-    height: 100%;
+  }
+
+  @media (max-width: 28em) {
+    width: 18rem;
   }
 `;
 

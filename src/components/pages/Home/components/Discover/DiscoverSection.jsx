@@ -83,28 +83,18 @@ const TextContainer = styled.div`
     line-height: 3.5rem;
     -text-fill-color: transparent;
   }
-  /* 
-  @media (max-width: 34rem) {
-    width: 60rem;
+
+  @media (max-width: 26rem) {
+    align-items: center;
     gap: 3rem;
-
     h2 {
-      font-size: 4rem;
-    }
-  }
-
-  @media (max-width: 26em) {
-    width: 100%;
-    padding: 2rem;
-
-    h2 {
-      font-size: 3.2rem;
+      font-size: 3.5rem;
     }
 
     p {
-      font-size: 1.6rem;
+      text-align: center;
     }
-  } */
+  }
 `;
 
 const ImageContainer = styled.div`
