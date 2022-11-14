@@ -75,11 +75,11 @@ const Container = styled.div`
 
 const ContentContainer = styled.div`
   position: relative;
-  padding: 24rem 6rem 6rem;
+  padding: 16rem 6rem 6rem;
 `;
 
 const NavLink = styled.div`
-  font-size: 6.5rem;
+  font-size: 4.5rem;
   color: linear-gradient(
     90deg,
     ${({ theme }) => theme.textColors.primaryTextColor} 11.45%,
