@@ -1,12 +1,12 @@
-import image_1 from "./assets/image_1.svg";
-import image_2 from "./assets/image_2.svg";
-import image_3 from "./assets/image_3.svg";
-import image_4 from "./assets/image_4.svg";
-import image_5 from "./assets/image_5.svg";
-import image_6 from "./assets/image_6.svg";
-import image_7 from "./assets/image_7.svg";
-import image_8 from "./assets/image_8.svg";
-import rating from "./assets/rating.svg";
+import image_1 from "./assets/image_1.png";
+import image_2 from "./assets/image_2.png";
+import image_3 from "./assets/image_3.png";
+import image_4 from "./assets/image_4.png";
+import image_5 from "./assets/image_5.png";
+import image_6 from "./assets/image_6.png";
+import image_7 from "./assets/image_7.png";
+import image_8 from "./assets/image_8.png";
+import rating from "./assets/rating.png";
 
 export const data = [
   {
