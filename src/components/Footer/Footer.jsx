@@ -78,8 +78,9 @@ const FooterContainer = styled.footer`
 
   @media (max-width: 26em) {
     flex-direction: column-reverse;
-    padding: 4rem 2rem 2rem;
+    padding: 4rem 0 2rem;
     gap: 4rem;
+    width: 96%;
   }
 
   /* @media (max-width: 24em) {
