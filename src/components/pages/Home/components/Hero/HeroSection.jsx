@@ -137,7 +137,7 @@ const ImageContainer = styled.div`
   }
 
   @media (max-width: 24em) {
-    width: 35rem;
+    width: 28rem;
   }
 
   @media (max-width: 19em) {
