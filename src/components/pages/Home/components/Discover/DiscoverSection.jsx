@@ -36,6 +36,14 @@ const DiscoverContainer = styled.div`
   gap: 7rem;
   align-items: center;
   color: #fff;
+
+  @media (max-width: 61em) {
+    height: 50rem;
+  }
+
+  @media (max-width: 28em) {
+    height: 35rem;
+  }
 `;
 
 const TextContainer = styled.div`

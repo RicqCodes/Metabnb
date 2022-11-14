@@ -133,11 +133,11 @@ const ImageContainer = styled.div`
   }
 
   @media (max-width: 31em) {
-    width: 40rem;
+    width: 36rem;
   }
 
   @media (max-width: 24em) {
-    width: 35rem;
+    width: 33rem;
   }
 
   @media (max-width: 19em) {
