@@ -56,10 +56,10 @@ const Footer = () => {
 export default Footer;
 
 const FooterContainer = styled.footer`
-  padding: 0 calc(100vw - 133.8rem);
+  width: 100%;
+  padding: 4rem 10rem;
   /* height: 2rem; */
   background: #1d1d1e;
-  padding-top: 4rem;
   color: #fff;
   display: flex;
   gap: 24rem;
@@ -78,6 +78,7 @@ const FooterContainer = styled.footer`
 
   @media (max-width: 26em) {
     flex-direction: column-reverse;
+    width: 83%;
     padding: 4rem 2rem 2rem;
     gap: 4rem;
   }
