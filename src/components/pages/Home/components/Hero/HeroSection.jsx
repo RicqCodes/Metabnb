@@ -104,6 +104,7 @@ const TextContainer = styled.div`
 
   @media (max-width: 31em) {
     gap: 2.5rem;
+    width: 36rem;
     font-size: 3.2rem;
     line-height: 4rem;
 
