@@ -147,7 +147,7 @@ const Community = styled.div`
     }
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 22em) {
     h2 {
       font-size: 1.5rem;
     }

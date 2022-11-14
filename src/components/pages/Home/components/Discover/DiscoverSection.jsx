@@ -48,7 +48,7 @@ const DiscoverContainer = styled.div`
     height: 40rem;
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 22em) {
     gap: 5rem;
     /* padding: 0 5rem; */
   }
@@ -109,7 +109,7 @@ const TextContainer = styled.div`
     }
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 22em) {
     width: 100%;
     padding: 2rem;
 
