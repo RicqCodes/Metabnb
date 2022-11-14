@@ -98,7 +98,7 @@ const TextContainer = styled.div`
     }
   }
 
-  @media (max-width: 26em) {
+  @media (max-width: 31em) {
     gap: 2.5rem;
     font-size: 2.5rem;
     line-height: 4rem;
