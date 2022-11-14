@@ -99,7 +99,7 @@ const MainContainer = styled.div`
 
   @media (max-width: 26em) {
     ${AppContainer} & {
-      width: 44rem;
+      width: 46rem;
     }
   }
 
