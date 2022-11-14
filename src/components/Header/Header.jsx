@@ -95,7 +95,7 @@ const Logo = styled.div`
   }
 
   @media (max-width: 28em) {
-    width: 15rem;
+    width: 13rem;
   }
 `;
 
