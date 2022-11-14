@@ -22,8 +22,7 @@ const AdventureSection = () => {
 export default AdventureSection;
 
 const AdventureContainer = styled.div`
-  /* max-width: 122rem; */
-  padding: 0 10rem;
+  max-width: 122rem;
   display: flex;
   flex-direction: column;
   margin: 4rem auto;
