@@ -45,7 +45,7 @@ const DiscoverContainer = styled.div`
   @media (max-width: 34rem) {
     gap: 2rem;
 
-    height: 50rem;
+    height: 40rem;
   }
 
   @media (max-width: 26em) {
@@ -122,20 +122,20 @@ const TextContainer = styled.div`
     }
   }
 
-  @media (max-width: 23em) {
+  /* @media (max-width: 23em) {
     font-size: 2.2rem;
 
     p {
       margin-left: 1rem;
-      width: 40rem;
+      width: 100%;
     }
   }
 
   @media (max-width: 23em) {
     p {
-      width: 35rem;
+      width: 100%;
     }
-  }
+  } */
 `;
 
 const ImageContainer = styled.div`
