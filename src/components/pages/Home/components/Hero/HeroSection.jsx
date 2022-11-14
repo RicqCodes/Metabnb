@@ -133,15 +133,15 @@ const ImageContainer = styled.div`
   }
 
   @media (max-width: 31em) {
-    width: 55rem;
+    width: 45rem;
   }
 
   @media (max-width: 24em) {
-    width: 28rem;
+    width: 40rem;
   }
 
   @media (max-width: 19em) {
-    width: 28rem;
+    width: 35rem;
   }
 `;
 
