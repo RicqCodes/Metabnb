@@ -121,21 +121,6 @@ const TextContainer = styled.div`
       font-size: 1.6rem;
     }
   }
-
-  /* @media (max-width: 23em) {
-    font-size: 2.2rem;
-
-    p {
-      margin-left: 1rem;
-      width: 100%;
-    }
-  }
-
-  @media (max-width: 23em) {
-    p {
-      width: 100%;
-    }
-  } */
 `;
 
 const ImageContainer = styled.div`
