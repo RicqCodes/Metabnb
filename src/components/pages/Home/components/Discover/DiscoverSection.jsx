@@ -47,6 +47,12 @@ const DiscoverContainer = styled.div`
 
     height: 50rem;
   }
+
+  @media (max-width: 26em) {
+    gap: 5rem;
+    width: 83%;
+    padding: 0 5rem;
+  }
 `;
 
 const TextContainer = styled.div`
