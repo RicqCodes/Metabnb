@@ -50,7 +50,6 @@ const DiscoverContainer = styled.div`
 
   @media (max-width: 26em) {
     gap: 5rem;
-    width: 96%;
     /* padding: 0 5rem; */
   }
 `;
