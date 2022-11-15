@@ -92,9 +92,11 @@ const LeftContainer = styled.div`
 
   @media (max-width: 37.2em) {
     font-size: 1.8rem;
+    height: 22vh;
+    width: 18rem;
 
     img {
-      width: 75%;
+      width: 100%;
     }
   }
 `;
@@ -117,7 +119,7 @@ const Community = styled.nav`
   ul {
     display: flex;
     flex-direction: column;
-    gap: 2.6rem;
+    gap: 2rem;
     font-size: 1.6rem;
     p {
       color: #fff;
@@ -136,18 +138,6 @@ const Community = styled.nav`
 
     @media (max-width: 37.2em) {
       font-size: 1.8rem;
-    }
-  }
-
-  @media (max-width: 26em) {
-    h2 {
-      /* font-size: 1.5rem; */
-    }
-
-    ul {
-      li {
-        /* font-size: 1.2rem; */
-      }
     }
   }
 `;

@@ -13,11 +13,13 @@ const Header = () => {
     <HeaderContainer>
       <NavBar>
         <Logo>
-          <img
-            onClick={() => setIsModalOpen(false)}
-            src={logo}
-            alt="MetaBnB Logo"
-          />
+          <Link to="/">
+            <img
+              onClick={() => setIsModalOpen(false)}
+              src={logo}
+              alt="MetaBnB Logo"
+            />
+          </Link>
         </Logo>
         <NavLink>
           <ul>
@@ -48,6 +50,7 @@ const Header = () => {
           Connect Wallet
         </ConnectButton>
         <NavButton
+          data-check={navButton}
           onClick={() => setNavButton(!navButton)}
           className={navButton ? "open" : "close"}
         >
@@ -67,6 +70,7 @@ const HeaderContainer = styled.div`
   /* max-width: 124rem; */
   padding: 3rem 10rem;
   height: 10rem;
+  background-color: #fff;
   display: flex;
   margin: 0 auto;
 
@@ -88,6 +92,7 @@ const NavBar = styled.div`
 `;
 
 const Logo = styled.div`
+  cursor: pointer;
   width: 23.3rem;
 
   img {
@@ -162,8 +167,7 @@ const NavButton = styled.button`
   @media (max-width: 41em) {
     display: block;
     background-color: transparent;
-    position: fixed;
-    right: 2rem;
+    /* position: fixed; */
     border: none;
 
     .open,
@@ -181,6 +185,15 @@ const NavButton = styled.button`
       transition-property: opacity, filter;
       transition-duration: 0.15s;
       transition-timing-function: linear;
+      position: relative;
+    }
+
+    &[data-check="true"] {
+      position: fixed;
+      right: 3rem;
+    }
+
+    &[data-check="false"] {
       position: relative;
     }
   }
