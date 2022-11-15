@@ -162,6 +162,8 @@ const NavButton = styled.button`
   @media (max-width: 41em) {
     display: block;
     background-color: transparent;
+    position: fixed;
+    right: 2rem;
     border: none;
 
     .open,
