@@ -118,6 +118,18 @@ const NavLink = styled.div`
         text-decoration: none;
         color: inherit;
       }
+
+      @media (hover: hover) and (any-pointer: fine) {
+        &:hover {
+          color: ${({ theme }) => theme.colors.primaryColor};
+        }
+      }
+
+      @media (hover: hover) and (any-pointer: coarse) {
+        &:hover {
+          color: ${({ theme }) => theme.colors.primaryColor};
+        }
+      }
     }
   }
 

@@ -79,7 +79,7 @@ const ContentContainer = styled.div`
 `;
 
 const NavLink = styled.div`
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   color: linear-gradient(
     90deg,
     ${({ theme }) => theme.textColors.primaryTextColor} 11.45%,
@@ -106,7 +106,7 @@ const ConnectButton = styled.button`
   margin-top: 8rem;
   bottom: 0;
   font-family: inherit;
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 1.8rem 3rem;
   background: transparent;
   color: ${({ theme }) => theme.colors.primaryColor};

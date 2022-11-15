@@ -68,8 +68,9 @@ const NftNav = () => {
 export default NftNav;
 
 const NavContainer = styled.div`
-  max-width: 122rem;
+  /* max-width: 122rem; */
   display: flex;
+  gap: 3rem;
   justify-content: space-between;
   align-items: center;
   margin: 8rem auto 5rem;
@@ -85,7 +86,7 @@ const Filter = styled.div`
   @media (max-width: 37em) {
     display: flex;
     gap: 3rem;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     border: 1px solid #b4b4b4;
     border-radius: 8px;
     padding: 1rem 1.2rem;
@@ -199,7 +200,7 @@ const ParentDiv = styled.div`
 
 const DropDownListContainer = styled.div`
   position: absolute;
-  width: 40rem;
+  width: 60vw;
   top: 5rem;
   z-index: 999;
 `;
@@ -211,13 +212,11 @@ const DropDownList = styled.ul`
   font-size: 2rem;
   color: inherit;
   font-weight: 500;
-  text-align: center;
   background-color: #fff;
-  /* border: 2px solid ${({ theme }) => theme.colors.primaryColor}; */
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
-  flex-direction: center;
   &:first-child {
     padding-top: 0.8em;
   }
@@ -227,17 +226,35 @@ const ListItem = styled.li`
   position: relative;
   margin-bottom: 0.8rem;
   padding: 2rem;
+  letter-spacing: 0.2rem;
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(160, 34, 121, 1);
+  }
 
   &:not(:last-child) {
     ::after {
       content: "";
+      display: none;
       position: absolute;
       bottom: 0;
       left: 14rem;
-
       width: 8rem;
       height: 0.2rem;
       background-color: ${({ theme }) => theme.colors.primaryColor};
+    }
+  }
+
+  @media (hover: hover) and (any-pointer: fine) {
+    &:hover {
+      ::after {
+        display: inline-block;
+      }
+    }
+
+    @media (hover: hover) and (any-pointer: coarse) {
+      &:hover {
+        color: ${({ theme }) => theme.colors.primaryColor};
+      }
     }
   }
 `;

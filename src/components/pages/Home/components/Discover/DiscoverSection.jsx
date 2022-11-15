@@ -43,6 +43,7 @@ const DiscoverContainer = styled.div`
 
   @media (max-width: 28em) {
     height: 40rem;
+    padding: 3rem;
   }
 `;
 
@@ -98,6 +99,7 @@ const TextContainer = styled.div`
   @media (max-width: 26rem) {
     align-items: center;
     gap: 3rem;
+    width: 100%;
     h2 {
       font-size: 3.5rem;
     }
