@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import image from "./assets/image.svg";
+import image from "./assets/image.png";
 
 const DiscoverSection = () => {
   return (
