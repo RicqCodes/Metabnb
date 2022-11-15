@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import AdventureCard from "../../../../Adventure/components/AdventureCard";
+import AdventureCard from "../../../Home/Adventure/components/AdventureCard";
 import { data } from "./NFTData";
 
 const NFTList = () => {
