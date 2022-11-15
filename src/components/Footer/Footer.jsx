@@ -92,6 +92,10 @@ const LeftContainer = styled.div`
 
   @media (max-width: 37.2em) {
     font-size: 1.8rem;
+
+    img {
+      width: 75%;
+    }
   }
 `;
 
