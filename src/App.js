@@ -32,7 +32,8 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 144rem;
+  max-width: 124rem;
+  margin: 0 auto;
 `;
 
 const MainContainer = styled.div`
