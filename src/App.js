@@ -16,7 +16,7 @@ function App() {
           <Router>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/nfts" element={<NFTS />} />
+              <Route path="/placetostay" element={<NFTS />} />
             </Routes>
           </Router>
         </MainContainer>
