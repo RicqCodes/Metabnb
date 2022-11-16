@@ -9,8 +9,8 @@ const Customers = () => {
   return (
     <CustomerContainer>
       <IMGSRC>
-        <img src={metamask} alt="metamask logo" />
         <img src={mbToken} alt="MB token logo" />
+        <img src={metamask} alt="metamask logo" />
         <img src={opensea} alt="opensea logo" />
       </IMGSRC>
     </CustomerContainer>
