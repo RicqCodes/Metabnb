@@ -95,7 +95,7 @@ const TextContainer = styled.div`
     margin: 0;
     color: #434343;
     font-size: 5.6rem;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: -2%;
     line-height: 140%;
 
