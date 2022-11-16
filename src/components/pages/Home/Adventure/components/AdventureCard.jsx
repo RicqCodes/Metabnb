@@ -73,6 +73,10 @@ const Image = styled.div`
     padding: 1rem;
   }
 
+  img:nth-child(1) {
+    height: 28rem;
+  }
+
   img:nth-child(2) {
     position: absolute;
     width: 4rem;
