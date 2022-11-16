@@ -25,6 +25,7 @@ const NFTContainer = styled.div`
   justify-content: center;
   margin-bottom: 10rem;
   text-align: center;
+  width: 100%;
 
   @media (max-width: 72rem) {
     width: 100%;
