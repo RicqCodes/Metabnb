@@ -57,6 +57,7 @@ const BuggerOuterContainer = styled.div`
   background: rgba(64, 64, 64, 0.3);
   position: fixed;
   overflow: hidden;
+  z-index: 500;
 `;
 
 const Centered = styled.div`
@@ -70,7 +71,6 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background: #ffffff;
-  border-radius: 1.6rem;
 `;
 
 const ContentContainer = styled.div`
