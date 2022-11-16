@@ -83,10 +83,10 @@ const HeaderContainer = styled.div`
     padding: 3rem 5rem;
   }
 
-  /* @media (max-width: 28em) {
+  @media (max-width: 28em) {
     padding-left: 3rem;
     padding-right: 3rem;
-  } */
+  }
 `;
 
 const NavBar = styled.div`
