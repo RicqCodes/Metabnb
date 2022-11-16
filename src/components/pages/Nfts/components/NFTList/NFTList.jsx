@@ -23,7 +23,7 @@ const NFTContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin-top: 2rem; */
+  margin-bottom: 10rem;
   text-align: center;
 
   @media (max-width: 72rem) {
