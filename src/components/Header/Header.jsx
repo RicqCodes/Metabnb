@@ -147,7 +147,7 @@ const NavLink = styled.div`
     }
   }
 
-  @media (max-width: 42.7em) {
+  @media (max-width: 48em) {
     display: none;
   }
 `;
@@ -163,7 +163,7 @@ const ConnectButton = styled.button`
   color: #fff;
   cursor: pointer;
 
-  @media (max-width: 42.7em) {
+  @media (max-width: 48em) {
     display: none;
   }
 `;
@@ -173,7 +173,7 @@ const NavButton = styled.button`
   font-size: 2.4rem;
   z-index: 999;
 
-  @media (max-width: 42.7em) {
+  @media (max-width: 48em) {
     display: block;
     background-color: transparent;
     /* position: fixed; */

@@ -28,17 +28,17 @@ const NavBuger = ({ setIsModalOpen, setNavButton }) => {
                     Community
                   </Link>
                 </li>
+                <ConnectButton
+                  aria-label="connect"
+                  onClick={() => {
+                    setIsModalOpen(true);
+                    setNavButton(false);
+                  }}
+                >
+                  Connect Wallet
+                </ConnectButton>
               </ul>
             </NavLink>
-            <ConnectButton
-              aria-label="connect"
-              onClick={() => {
-                setIsModalOpen(true);
-                setNavButton(false);
-              }}
-            >
-              Connect Wallet
-            </ConnectButton>
           </ContentContainer>
         </Container>
       </Centered>
@@ -100,10 +100,14 @@ const NavLink = styled.div`
       }
     }
   }
+
+  @media (maxwidth: 48rem) {
+    text-align: center;
+  }
 `;
 
 const ConnectButton = styled.button`
-  margin-top: 8rem;
+  margin-top: 4rem;
   bottom: 0;
   font-family: inherit;
   font-size: 3rem;
@@ -113,4 +117,8 @@ const ConnectButton = styled.button`
   border: 1px solid ${({ theme }) => theme.colors.primaryColor};
   border-radius: 10px;
   cursor: pointer;
+
+  @media (maxwidth: 48rem) {
+    text-align: center;
+  }
 `;
