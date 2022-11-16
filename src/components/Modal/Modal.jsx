@@ -66,6 +66,7 @@ const ModalOuterContainer = styled.div`
   background: rgba(64, 64, 64, 0.3);
   position: fixed;
   overflow: hidden;
+  z-index: 1000;
 `;
 
 const Centered = styled.div`

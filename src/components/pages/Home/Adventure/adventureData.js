@@ -7,7 +7,6 @@ import image_6 from "./assets/image_6.png";
 import image_7 from "./assets/image_7.png";
 import image_8 from "./assets/image_8.png";
 import rating from "./assets/rating.svg";
-import like from "./assets/heart.png";
 
 export const data = [
   {
@@ -17,7 +16,6 @@ export const data = [
     distance: "2345km away",
     availability: "available for 2weeks stay",
     rating: rating,
-    like: like,
   },
   {
     image: image_2,
@@ -26,7 +24,6 @@ export const data = [
     distance: "2345km away",
     availability: "available for 2weeks stay",
     rating: { rating },
-    like: like,
   },
   {
     image: image_3,
@@ -35,7 +32,6 @@ export const data = [
     distance: "2345km away",
     availability: "available for 2weeks stay",
     rating: { rating },
-    like: like,
   },
   {
     image: image_4,
@@ -44,7 +40,6 @@ export const data = [
     distance: "2345km away",
     availability: "available for 2weeks stay",
     rating: { rating },
-    like: like,
   },
   {
     image: image_5,
@@ -53,7 +48,6 @@ export const data = [
     distance: "2345km away",
     availability: "available for 2weeks stay",
     rating: { rating },
-    like: like,
   },
   {
     image: image_6,
@@ -62,7 +56,6 @@ export const data = [
     distance: "2345km away",
     availability: "available for 2weeks stay",
     rating: { rating },
-    like: like,
   },
   {
     image: image_7,
@@ -71,7 +64,6 @@ export const data = [
     distance: "2345km away",
     availability: "available for 2weeks stay",
     rating: { rating },
-    like: like,
   },
   {
     image: image_8,
@@ -80,6 +72,5 @@ export const data = [
     distance: "2345km away",
     availability: "available for 2weeks stay",
     rating: { rating },
-    like: like,
   },
 ];

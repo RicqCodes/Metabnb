@@ -8,7 +8,6 @@ const AdventureCard = ({ nftData }) => {
     <CardContainer>
       <Image>
         <img src={nftData.image} alt="NFT" />
-        <img src={nftData.like} alt="Likes" />
       </Image>
       <TextContainer>
         <Text>
@@ -44,25 +43,11 @@ const Image = styled.div`
   img {
     border-radius: 1.5rem;
     width: 100%;
-  }
-
-  img:nth-child(1) {
-    height: 100%;
+    /* height: 100%; */
 
     @media (max-width: 58em) {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  img:nth-child(2) {
-    position: absolute;
-    width: 4rem;
-    top: 1rem;
-    right: 0.7rem;
-
-    @media (max-width: 72em) {
-      width: 3rem;
+      /* width: 100%; */
+      /* height: 100%; */
     }
   }
 `;
