@@ -177,6 +177,10 @@ const SearchInput = styled.div`
       :focus {
         outline: none;
       }
+
+      @media (max-width: 42.7em) {
+        width: 90%;
+      }
     }
 
     button {
