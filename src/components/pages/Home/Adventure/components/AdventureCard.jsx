@@ -6,7 +6,10 @@ import rating from "../assets/rating.svg";
 const AdventureCard = ({ nftData }) => {
   return (
     <CardContainer>
-      <img src={nftData.image} alt="" />
+      <Image>
+        <img src={nftData.image} alt="NFT" />
+        <img src={nftData.like} alt="Likes" />
+      </Image>
       <TextContainer>
         <LeftText>
           <p>{nftData.name}</p>
@@ -33,11 +36,6 @@ const CardContainer = styled.div`
   border-radius: 15px;
   cursor: pointer;
 
-  img {
-    width: 100%;
-    padding: 1rem;
-  }
-
   @media (max-width: 72em) {
     /* flex-wrap: nowrap; */
     width: 23rem;
@@ -63,6 +61,23 @@ const CardContainer = styled.div`
 
   @media (max-width: 30em) {
     width: 35rem;
+  }
+`;
+
+const Image = styled.div`
+  position: relative;
+
+  img {
+    border-radius: 2.5rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  img:nth-child(2) {
+    position: absolute;
+    width: 4rem;
+    top: 1rem;
+    right: 0.7rem;
   }
 `;
 

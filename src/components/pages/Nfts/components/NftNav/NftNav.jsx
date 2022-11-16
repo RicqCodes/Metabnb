@@ -69,6 +69,7 @@ export default NftNav;
 
 const NavContainer = styled.div`
   /* max-width: 122rem; */
+  padding: 0 10rem;
   display: flex;
   gap: 3rem;
   justify-content: space-between;
@@ -83,7 +84,7 @@ const NavContainer = styled.div`
 const Filter = styled.div`
   display: none;
 
-  @media (max-width: 37em) {
+  @media (max-width: 42.7em) {
     display: flex;
     gap: 3rem;
     /* justify-content: space-between; */
@@ -137,8 +138,8 @@ const NavList = styled.div`
 
   @media (max-width: 72em) {
     ul {
-      font-size: 1.8rem;
-      gap: 3rem;
+      font-size: 1.6rem;
+      gap: 2rem;
     }
   }
 
@@ -146,7 +147,7 @@ const NavList = styled.div`
     gap: 3rem;
   }
 
-  @media (max-width: 37em) {
+  @media (max-width: 42.7em) {
     gap: 2rem;
 
     ul {
