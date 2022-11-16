@@ -69,12 +69,14 @@ export default NftNav;
 
 const NavContainer = styled.div`
   /* max-width: 122rem; */
-  padding: 0 10rem;
+  padding: 1.8rem 14.5rem;
+
   display: flex;
   gap: 3rem;
   justify-content: space-between;
   align-items: center;
-  margin: 8rem auto 5rem;
+  margin: 14rem auto 1rem;
+  width: 100%;
 
   @media (max-width: 72em) {
     padding: 0 5rem;
@@ -84,7 +86,7 @@ const NavContainer = styled.div`
 const Filter = styled.div`
   display: none;
 
-  @media (max-width: 42.7em) {
+  @media (max-width: 48em) {
     display: flex;
     gap: 3rem;
     border: 1px solid #b4b4b4;
@@ -121,6 +123,7 @@ const NavList = styled.div`
   display: flex;
   align-items: center;
   gap: 5rem;
+  /* width: 100%; */
 
   ul {
     display: flex;
@@ -138,7 +141,19 @@ const NavList = styled.div`
   @media (max-width: 72em) {
     ul {
       font-size: 1.6rem;
-      gap: 2rem;
+      gap: 5rem;
+    }
+
+    @media (max-width: 70em) {
+      ul {
+        gap: 4rem;
+      }
+    }
+
+    @media (max-width: 56em) {
+      ul {
+        gap: 2rem;
+      }
     }
   }
 
@@ -146,7 +161,7 @@ const NavList = styled.div`
     gap: 3rem;
   }
 
-  @media (max-width: 42.7em) {
+  @media (max-width: 48em) {
     gap: 2rem;
 
     ul {

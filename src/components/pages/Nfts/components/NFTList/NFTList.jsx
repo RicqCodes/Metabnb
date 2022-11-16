@@ -11,7 +11,7 @@ const NFTList = () => {
 
   return (
     <NFTContainer>
-      <BoxContainer>{nftData}</BoxContainer>
+      <MainContainer>{nftData}</MainContainer>
     </NFTContainer>
   );
 };
@@ -19,27 +19,55 @@ const NFTList = () => {
 export default NFTList;
 
 const NFTContainer = styled.div`
-  max-width: 122rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 0 auto 8rem;
+  justify-content: center;
+  /* margin-top: 2rem; */
+  text-align: center;
 
-  @media (max-width: 72em) {
-    padding: 0 5rem;
+  @media (max-width: 72rem) {
+    width: 100%;
   }
 `;
 
-const BoxContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+const MainContainer = styled.div`
+  grid-gap: 24px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 24%);
+  justify-content: center;
+  margin-top: 43px;
+  width: min(1240px, 90%);
 
   @media (max-width: 72em) {
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(3, 32%);
   }
 
-  @media (max-width: 46.6em) {
-    column-gap: 5rem;
+  @media (max-width: 58em) {
+    grid-gap: 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 48%);
+    margin-top: 43px;
+    width: min(1240px, 90%);
+  }
+
+  @media (max-width: 34em) {
+    grid-gap: 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(1, 75%);
+    margin-top: 43px;
+    width: min(1240px, 90%);
+  }
+
+  @media (max-width: 27em) {
+    grid-gap: 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(1, 90%);
+    margin-top: 43px;
+    width: min(1240px, 90%);
   }
 `;
