@@ -136,6 +136,9 @@ const NavLink = styled.div`
         }
       }
     }
+    @media (max-width: 44.5em) {
+      gap: 3rem;
+    }
   }
 
   @media (max-width: 42.7em) {
