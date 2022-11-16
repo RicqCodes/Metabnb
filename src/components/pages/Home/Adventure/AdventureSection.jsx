@@ -56,24 +56,6 @@ const MainContainer = styled.div`
     width: min(1240px, 90%);
   }
 
-  @media (max-width: 58em) {
-    grid-gap: 24px;
-    display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(1, 75%);
-    margin-top: 43px;
-    width: min(1240px, 90%);
-  }
-
-  @media (max-width: 58em) {
-    grid-gap: 24px;
-    display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(1, 60%);
-    margin-top: 43px;
-    width: min(1240px, 90%);
-  }
-
   @media (max-width: 34em) {
     grid-gap: 24px;
     display: grid;
