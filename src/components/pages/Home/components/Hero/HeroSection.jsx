@@ -183,8 +183,8 @@ const SearchInput = styled.div`
         outline: none;
       }
 
-      @media (max-width: 31em) {
-        height: 3.5rem;
+      @media (max-width: 38.5em) {
+        height: 5rem;
       }
     }
 
@@ -200,8 +200,8 @@ const SearchInput = styled.div`
       border-radius: 0px 8px 8px 0px;
       cursor: pointer;
 
-      @media (max-width: 31em) {
-        height: 3.5rem;
+      @media (max-width: 38.5em) {
+        height: 5rem;
       }
     }
 
