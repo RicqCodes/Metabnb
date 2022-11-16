@@ -22,9 +22,9 @@ html {
             font-size: 50%;
         }   
 
-        @media (max-width: 49em) {
+        /* @media (max-width: 49em) {
             font-size: 45%;
-        }   
+        }    */
         
         /* @media (max-width: 45em) {
             font-size: 36%;
@@ -60,6 +60,8 @@ ul, ol, li {
     padding: 0;
     list-style-type: none;
   }
+
+  p, h1 {}
 `;
 
 export default GlobalStyles;

@@ -16,12 +16,12 @@ const NavBuger = ({ setIsModalOpen, setNavButton }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={() => setNavButton(false)} to="/">
+                  <Link onClick={() => setNavButton(false)} to="/placetostay">
                     Place to stay
                   </Link>
                 </li>
                 <li>
-                  <Link to="/nfts">NFTs</Link>
+                  <Link to="/">NFTs</Link>
                 </li>
                 <li>
                   <Link onClick={() => setNavButton(false)} to="/">

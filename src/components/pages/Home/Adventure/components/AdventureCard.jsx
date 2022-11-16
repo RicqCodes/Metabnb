@@ -11,15 +11,15 @@ const AdventureCard = ({ nftData }) => {
         <img src={nftData.like} alt="Likes" />
       </Image>
       <TextContainer>
-        <LeftText>
+        <Text>
           <p>{nftData.name}</p>
+          <p className="price">{nftData.price}</p>
+        </Text>
+        <Text>
           <p>{nftData.distance}</p>
-          <img src={rating} alt="rating" />
-        </LeftText>
-        <RightText>
-          <p>{nftData.price}</p>
           <p>{nftData.availability}</p>
-        </RightText>
+        </Text>
+        <img src={rating} alt="rating" />
       </TextContainer>
     </CardContainer>
   );
@@ -28,53 +28,31 @@ const AdventureCard = ({ nftData }) => {
 export default AdventureCard;
 
 const CardContainer = styled.div`
-  width: 29.2rem;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  width: 100%;
   border: 1px solid #d7d7d7;
   border-radius: 15px;
-  cursor: pointer;
-
-  @media (max-width: 72em) {
-    /* flex-wrap: nowrap; */
-    width: 23rem;
-  }
-  @media (max-width: 53.5em) {
-    /* flex-wrap: nowrap; */
-    width: 21rem;
-  }
-
-  @media (max-width: 49.2em) {
-    /* flex-wrap: nowrap; */
-    width: 20rem;
-  }
-
-  @media (max-width: 48.01em) {
-    /* flex-wrap: nowrap; */
-    width: 32rem;
-  }
-
-  @media (max-width: 33.9em) {
-    width: 27rem;
-  }
-
-  @media (max-width: 30em) {
-    width: 35rem;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
 `;
 
 const Image = styled.div`
+  width: 100%;
   position: relative;
 
   img {
-    border-radius: 2.5rem;
+    border-radius: 1.5rem;
     width: 100%;
-    padding: 1rem;
   }
 
   img:nth-child(1) {
-    height: 28rem;
+    height: 100%;
+
+    @media (max-width: 58em) {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   img:nth-child(2) {
@@ -82,62 +60,31 @@ const Image = styled.div`
     width: 4rem;
     top: 1rem;
     right: 0.7rem;
+
+    @media (max-width: 72em) {
+      width: 3rem;
+    }
   }
 `;
 
 const TextContainer = styled.div`
+  align-items: flex-start;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+const Text = styled.div`
+  display: flex;
   justify-content: space-between;
-  padding: 0 1rem 1rem;
-`;
+  width: 100%;
 
-const LeftText = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  text-align: left;
-
-  img {
-    padding: 0;
-  }
-
-  p {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  @media (max-width: 46.6em) {
-    width: 40%;
-  }
-
-  @media (max-width: 30em) {
-    p {
-      font-size: 1.8rem;
-    }
-  }
-`;
-
-const RightText = styled.div`
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  align-self: flex-start;
-
-  p {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  p:first-child {
+  .price {
     font-weight: 700;
   }
 
-  @media (max-width: 30em) {
-    p {
-      font-size: 1.8rem;
-    }
+  p {
+    font-size: 1.2rem;
+    margin: 0;
   }
 `;

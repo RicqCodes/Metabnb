@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 
 import AdventureCard from "./components/AdventureCard";
@@ -11,10 +11,8 @@ const AdventureSection = () => {
 
   return (
     <AdventureContainer>
-      <Container>
-        <h2>Inspiration for your next adventure</h2>
-        <BoxContainer>{nftData}</BoxContainer>
-      </Container>
+      <h1>Inspiration for your next adventure</h1>
+      <MainContainer>{nftData}</MainContainer>
     </AdventureContainer>
   );
 };
@@ -22,61 +20,75 @@ const AdventureSection = () => {
 export default AdventureSection;
 
 const AdventureContainer = styled.div`
-  max-width: 122rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 4rem auto;
-
-  @media (max-width: 72em) {
-    padding: 0 5rem;
-  }
-`;
-
-const Container = styled.div`
+  justify-content: center;
+  margin-top: 5.8rem;
   text-align: center;
+  width: 100%;
 
-  h2 {
-    color: #000;
-    font-weight: 700;
-    line-height: 5.9rem;
-    font-size: 3.8rem;
-    margin: 0 0 3rem;
+  h1 {
+    font-size: 4.8rem;
+    line-height: 59.95px;
   }
-
-  @media (max-width: 26em) {
-    h2 {
-      font-size: 3.3rem;
-      line-height: 2.5rem;
-    }
-  }
-
-  /* @media (max-width: 24em) {
-    h2 {
-      font-size: 3rem;
-      line-height: 3rem;
-    }
-  }
-
-  @media (max-width: 23em) {
-    h2 {
-      font-size: 2.3rem;
-      margin-top: 0;
-    }
-  } */
 `;
 
-const BoxContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+const MainContainer = styled.div`
+  grid-gap: 24px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 24%);
+  justify-content: center;
+  margin-top: 43px;
+  width: min(1240px, 90%);
 
   @media (max-width: 72em) {
-    /* flex-wrap: nowrap; */
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(3, 32%);
   }
 
-  /* @media (max-width: 46.6em) {
-    column-gap: 5rem;
-  } */
+  @media (max-width: 58em) {
+    grid-gap: 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 48%);
+    margin-top: 43px;
+    width: min(1240px, 90%);
+  }
+
+  @media (max-width: 58em) {
+    grid-gap: 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(1, 75%);
+    margin-top: 43px;
+    width: min(1240px, 90%);
+  }
+
+  @media (max-width: 58em) {
+    grid-gap: 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(1, 60%);
+    margin-top: 43px;
+    width: min(1240px, 90%);
+  }
+
+  @media (max-width: 34em) {
+    grid-gap: 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(1, 75%);
+    margin-top: 43px;
+    width: min(1240px, 90%);
+  }
+
+  @media (max-width: 27em) {
+    grid-gap: 24px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(1, 90%);
+    margin-top: 43px;
+    width: min(1240px, 90%);
+  }
 `;

@@ -87,7 +87,6 @@ const Filter = styled.div`
   @media (max-width: 42.7em) {
     display: flex;
     gap: 3rem;
-    /* justify-content: space-between; */
     border: 1px solid #b4b4b4;
     border-radius: 8px;
     padding: 1rem 1.2rem;

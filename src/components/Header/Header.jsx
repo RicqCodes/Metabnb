@@ -30,7 +30,7 @@ const Header = () => {
               <Link to="/placetostay">Place to stay</Link>
             </li>
             <li>
-              <Link to="/nfts">NFTs</Link>
+              <Link to="/">NFTs</Link>
             </li>
             <li>
               <Link to="/">Community</Link>
@@ -67,21 +67,26 @@ const Header = () => {
 export default Header;
 
 const HeaderContainer = styled.div`
-  /* max-width: 124rem; */
-  padding: 3rem 10rem;
-  height: 10rem;
+  align-items: center;
   background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   display: flex;
-  margin: 0 auto;
+  justify-content: space-between;
+  padding: 28px 145px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
 
-  @media (max-width: 61em) {
+  @media (max-width: 72em) {
     padding: 3rem 5rem;
   }
 
-  @media (max-width: 28em) {
+  /* @media (max-width: 28em) {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
+  } */
 `;
 
 const NavBar = styled.div`
@@ -115,6 +120,7 @@ const NavLink = styled.div`
   ul {
     display: flex;
     gap: 4.8rem;
+    font-size: 1.8rem;
 
     li {
       cursor: pointer;

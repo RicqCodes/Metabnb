@@ -32,16 +32,13 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 124rem;
   margin: 0 auto;
 `;
 
 const MainContainer = styled.div`
+  align-items: center;
+  display: flex;
   flex-direction: column;
-  gap: 2.5rem;
   justify-content: center;
-
-  ${AppContainer} & {
-    width: 100vw;
-  }
+  width: 100%;
 `;
