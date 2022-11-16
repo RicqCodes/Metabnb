@@ -120,7 +120,7 @@ const TextContainer = styled.div`
 
   @media (max-width: 30em) {
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
       line-height: 120%;
     }
 
